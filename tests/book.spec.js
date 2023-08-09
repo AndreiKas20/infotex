@@ -1,5 +1,4 @@
 import { test, expect } from '@playwright/test';
-import { allure } from "allure-playwright";
 
 test('search input', async ({ page }) => {
     await page.goto('https://demoqa.com/books')
