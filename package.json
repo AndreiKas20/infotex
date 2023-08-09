@@ -3,6 +3,7 @@
     "playwright": "^1.36.2"
   },
   "scripts": {
+    "test-and-report": "(npx playwright test || npm run report) && npm run report",
     "test": "npx playwright test",
     "report": "allure generate --clean && allure open"
   },
